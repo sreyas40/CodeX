@@ -4,18 +4,18 @@ body{
     max-width: 100%;
     height: 95vh;
     font-family: 'Times New Roman';
-    /* background-color: #000; */
+    /* background-color: black; */
     
     /* opacity: 0.9; */
     margin-top: 0px;
 }
 h1{
-    color: #0b41e6;
+    color:#3399ff;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 .navbar{
-    background-color: red;
+    /* background-color: red; */
     height: 80px;
     width:101.3%;
     margin: -8px;
@@ -23,7 +23,7 @@ h1{
     text-align: right;
     overflow: hidden;
     position: fixed;
-    
+    background-color: REDa;
 
 }
 
@@ -42,7 +42,7 @@ padding: 30px;
 }
 
 .navbar ul a{
-    color: #0b41e6;
+    color: #3399ff;
     
     font-size:20px;
     text-align: center;
@@ -68,7 +68,7 @@ padding: 30px;
 }
 
 .contain h1,h2,h3{
-    color:#0b41e6;
+    color:#3399ff;
     
     
     text-align: center;
@@ -134,7 +134,7 @@ padding: 30px;
 } */
 
 .contact{
-    background-color:#0b41e6;
+    background-color:red
     
     text-align: center;
     width: 100%;
@@ -148,7 +148,7 @@ padding: 30px;
 .cont{
     background-color:white;
     opacity: 0.9;
-    color:#0b41e6;
+    color:#3399ff;
     
     padding: 20px;
     
@@ -223,5 +223,5 @@ padding: 30px;
   
 }
 .nxtsec{
-  padding-top: 20px;
+  padding-top: 40px;
 }
