@@ -1,3 +1,67 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Times New Roman';
+}
+
+h1 {
+    color: #000d33;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+
+}
+
+.navbar div {
+    height: 60%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0% 2%;
+    background-color: #edf6f9af;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 30px;
+    font-family: 'Code Next-Trial Regular';
+}
+
+.navbar img {
+    width: 180px;
+    height: 60px;
+}
+
+
+
+.navbar div a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.navbar div a:hover {
+    color: #4e0110;
+}
+
+.content {
+    padding-top: 90px;
+}
+
+.contain {
+
+
+
 body{
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,31 +125,93 @@ padding: 30px;
    
    
     
+
     margin: auto;
     width: 70%;
     height: 140px;
     border-radius: 20px;
 }
 
+
+.contain h1,
+h2,
+h3 {
+    color: #001f7a;
+
+
 .contain h1,h2,h3{
     color:#3399ff;
     
     
+
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+.slider-frame {
+    overflow: hidden;
+
+    margin-left: 10%;
+
+    background-size: cover;
 .slider-frame{
     overflow: hidden;
     
     margin-left: 10%;
     
     background-size:cover;
-    
+
 }
 
 /*---------- SLIDE ANIMATION --------------*/
 
+
+
+@keyframes slide_animation {
+    0% {
+        left: 0px;
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    20% {
+        left: 1200px;
+    }
+
+    30% {
+        left: 1200px;
+    }
+
+    40% {
+        left: 2400px;
+    }
+
+    50% {
+        left: 2400px;
+    }
+
+    60% {
+        left: 1200px;
+    }
+
+    70% {
+        left: 1200px;
+    }
+
+    80% {
+        left: 0px;
+    }
+
+    90% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
 
 @keyframes slide_animation{
     0% {left:0px;}
@@ -103,7 +229,11 @@ padding: 30px;
 
 
 
+
+.slide-images {
+
 .slide-images{
+
     width: 3600px;
     height: 800px;
     margin: 0 0 0 -2400px;
@@ -120,12 +250,20 @@ padding: 30px;
     animation-play-state: running;
 }
 
+
+.img-container {
+
 .img-container{
+
     height: 300px;
     width: 1200px;
     position: relative;
     float: left;
 }
+.address {
+    background-color: #000d33;
+    color: white;
+    margin-left: 0;
 
 /* .address{
     background-color: #000d33;
@@ -224,4 +362,5 @@ padding: 30px;
 }
 .nxtsec{
   padding-top: 40px;
+
 }
