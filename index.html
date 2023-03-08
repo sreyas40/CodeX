@@ -6,33 +6,34 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>CodeX</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+    <link rel="stylesheet" href="fonts/font.css">
     <script src='main.js'></script>
 </head>
 
 <body>
 
-    <div class="navbar">
-        <!-- <img src="images/CodeX_logo_black.png" alt="CodeX logo"> -->
+    <header class="navbar">
+        <img src="images/CodeX_logo_white.png" alt="CodeX logo">
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="templates/team.html">Team</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="joinus.html">Join Us</a></li>
-        </ul>
-    </div>
+        <div class="nav_links">
+            <a href="index.html">home</a>
+            <a href="templates/team.html">team</a>
+            <a href="events.html">events</a>
+            <a href="blogs.html">blogs</a>
+            <a href="contact.html">contact</a>
+            <a href="joinus.html">join us</a>
+        </div>
+    </header>
 
     <div class="content">
         <div class="contain">
-            <h1>CodeX</h1>
+            <!-- <h1>CodeX</h1>
             <h3>Code the Future</h3>
-            <h2>Coding club of ASIET by ECE department</h2>
+            <h2>Coding club of ASIET by ECE department</h2> -->
 
         </div>
-        <div class="slider-frame">
+        <!-- <div class="slider-frame">
             <div class="slide-images">
                 <div class="img-container">
                     <img src="images/img1.jpg">
@@ -44,11 +45,25 @@
                     <img src="images/img3.jpg">
                 </div>
             </div>
-        </div>
-
-        <footer>
-            <!-- contents to be added -->
-        </footer>
+        </div> -->
+    </div>
+    <footer>
+        <!-- contents to be added -->
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+        VANTA.GLOBE({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        })
+    </script>
 </body>
 
 </html>
