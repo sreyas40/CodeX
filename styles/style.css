@@ -2,23 +2,20 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
-    font-family: 'Times New Roman';
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1 {
-    color: #000d33;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
+/*---------------HEADER--------------------*/
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10%;
     width: 100%;
-
+    margin-bottom: 5%;
 }
 
 .navbar div {
@@ -57,125 +54,98 @@ h1 {
     padding-top: 90px;
 }
 
+/*-----------------------------------*/
 
-
-.navbar ul a {
-    color: #3399ff;
-
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-
+/*---------- CAROUSEL --------------*/
+.is-hidden {
+    display: none !important;
 }
 
-.navbar img {
-    margin-left: 0;
+.carousel_body {
+    width: 75%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.content {
-    padding-top: 90px;
+
+.carousel_control {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
 }
 
-.contain {
-
-
-
-
-    margin: auto;
-    width: 70%;
-    height: 140px;
-    border-radius: 20px;
-}
-
-.slider-frame {
+.carousel_box1 {
+    height: 100%;
+    width: 90%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.295);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     overflow: hidden;
-
-    margin-left: 10%;
-
-    background-size: cover;
 }
 
-/*---------- SLIDE ANIMATION --------------*/
-
-
-
-@keyframes slide_animation {
-    0% {
-        left: 0px;
-    }
-
-    10% {
-        left: 0px;
-    }
-
-    20% {
-        left: 1200px;
-    }
-
-    30% {
-        left: 1200px;
-    }
-
-    40% {
-        left: 2400px;
-    }
-
-    50% {
-        left: 2400px;
-    }
-
-    60% {
-        left: 1200px;
-    }
-
-    70% {
-        left: 1200px;
-    }
-
-    80% {
-        left: 0px;
-    }
-
-    90% {
-        left: 0px;
-    }
-
-    100% {
-        left: 0px;
-    }
+.carousel_slides {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: transform 400ms ease-out;
 }
 
-.slide-images {
+.carousel_test {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
-    width: 3600px;
-    height: 800px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    animation-name: slide_animation;
-    -webkit-animation-duration: 33s;
-    animation-duration: 33s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
+.carousel_slide {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
 }
 
 
 
-
-.img-container {
-
-    height: 300px;
-    width: 1200px;
-    position: relative;
-    float: left;
+.carousel_nav {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.carousel_nav_child {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #5d7179;
+    margin-right: 1%;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
 
+.carousel_nav_child.current_pointer {
+    background-color: #FF3F81;
+
+}
+.carousel_control_left {
+    margin-right: 1%;
+}
+
+.carousel_control_right {
+    margin-left: 1%;
+}
+/*-----------------------------------*/
+/*---------------FOOTER--------------------*/
 .contact {
     background-color: red;
     text-align: center;
@@ -184,7 +154,7 @@ h1 {
 }
 
 .conts {
-    padding: 20px;
+    padding: 40px;
     background-size: cover;
 }
 
@@ -201,7 +171,9 @@ footer {
     height: 30%;
     display: flex;
     justify-content: space-around;
-    background-color: aquamarine;
+    background-color: rgba(245, 245, 245, 0.205);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -214,8 +186,21 @@ footer {
     width: 20px;
     height: auto;
 }
+.social_media_links{
+    display: flex;
+    list-style-type: none;
+    padding-inline-start:0;
+}
+.social_media_icons{
+    width: 40px;
+    height: auto;
+}
 
-/* team  */
+svg:hover #svg_color{
+    fill: #FFE5ED;
+}
+/*-----------------------------------*/
+/* ---------team-----------------  */
 .column {
     float: left;
     width: 23.3%;
