@@ -7,7 +7,10 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 /*---------------HEADER--------------------*/
 .navbar {
     display: flex;
@@ -42,7 +45,6 @@ body {
 .navbar div a {
     color: white;
     font-size: 1.1em;
-    text-decoration: none;
     transition: color 200ms;
 }
 
@@ -137,6 +139,7 @@ body {
     background-color: #FF3F81;
 
 }
+
 .carousel_control_left {
     margin-right: 1%;
 }
@@ -144,28 +147,9 @@ body {
 .carousel_control_right {
     margin-left: 1%;
 }
+
 /*-----------------------------------*/
 /*---------------FOOTER--------------------*/
-.contact {
-    background-color: red;
-    text-align: center;
-    width: 100%;
-    display: inline-flex;
-}
-
-.conts {
-    padding: 40px;
-    background-size: cover;
-}
-
-.cont {
-    background-color: white;
-    opacity: 0.9;
-    color: #3399ff;
-
-
-}
-
 footer {
     width: 100%;
     height: 30%;
@@ -174,31 +158,49 @@ footer {
     background-color: rgba(245, 245, 245, 0.205);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    font-size: 1.5em;
     font-family: 'Roboto Mono', monospace;
 }
 
 .footer_contact {
+    width: 40%;
     display: flex;
     align-items: center;
+    padding-left: 2%;
+    transition: color 200ms;
 }
-
-.footer_icons {
-    width: 20px;
-    height: auto;
-}
-.social_media_links{
+.footer_contact_row{
     display: flex;
-    list-style-type: none;
-    padding-inline-start:0;
 }
-.social_media_icons{
+.footer_contact:hover{
+    color: #FFF1AC;
+}
+.footer_address{
+    letter-spacing: -1.8px;
+}
+.footer_icons {
     width: 40px;
     height: auto;
 }
+.social_media_links {
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
 
-svg:hover #svg_color{
+.social_media_icons {
+    width: 60px;
+    height: auto;
+}
+
+#svg_color {
+    transition: fill 300ms;
+}
+
+svg:hover #svg_color {
     fill: #FFE5ED;
 }
+
 /*-----------------------------------*/
 /* ---------team-----------------  */
 .column {
