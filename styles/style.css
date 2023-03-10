@@ -6,6 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #23153c;
+    color: #FF3F81;
 }
 
 /*---------------HEADER--------------------*/
@@ -50,9 +52,7 @@ body {
     color: #4e0110;
 }
 
-.content {
-    padding-top: 90px;
-}
+
 
 /*-----------------------------------*/
 
@@ -219,11 +219,13 @@ svg:hover #svg_color{
 /* Add some shadows to create a card effect */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:#edf6f9af ;
+    border-radius: 10%;
 }
 
 /* Some left and right padding inside the container */
 .container {
-    padding: 0 16px;
+    padding: 6% 0 6%;
 }
 
 /* Clear floats */
@@ -239,31 +241,13 @@ svg:hover #svg_color{
     text-align: center;
 }
 
-.title p {
-    text-align: center;
-}
-
-.button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
-
-.button:hover {
-    background-color: #555;
-}
 
 .card img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    max-width: 50%;
+    max-height:50%;
 }
 
 .leads {
@@ -272,6 +256,10 @@ svg:hover #svg_color{
 }
 
 .nxtsec {
-    padding-top: 40px;
+    padding-top:8%;
 
+}
+
+h1,h2,h3{
+    text-align: center;
 }
