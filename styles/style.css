@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url("../images/background.svg");
     background-color: #23153c;
     color: #FF3F81;
 }
@@ -21,6 +22,7 @@ a{
     height: 10%;
     width: 100%;
     margin-bottom: 5%;
+    background-color: #23153c;
 }
 
 .navbar div {

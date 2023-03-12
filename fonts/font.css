@@ -7,15 +7,34 @@
     src: local('Simplifica'), url('SIMPLIFICA Typeface.woff') format('woff');
 }
 
- @font-face {
-     font-family: 'Code Next-Trial Regular';
-     font-style: normal;
-     font-weight: normal;
-     src: local('Code Next-Trial Regular'), url('CodeNext-Trial-Regular.woff') format('woff');
- }
-  @font-face {
-      font-family: 'Code Next-Trial SemiBold';
-      font-style: normal;
-      font-weight: normal;
-      src: local('Code Next-Trial SemiBold'), url('CodeNext-Trial-SemiBold.woff') format('woff');
-  }
+@font-face {
+    font-family: 'Code Next-Trial Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Code Next-Trial Regular'), url('CodeNext-Trial-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Code Next-Trial SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Code Next-Trial SemiBold'), url('CodeNext-Trial-SemiBold.woff') format('woff');
+}
+
+/* Webfont: Flaviotte-Regular */
+@font-face {
+    font-family: 'Flaviotte';
+    src: url('Flaviotte.eot');
+    /* IE9 Compat Modes */
+    src: url('Flaviotte.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('Flaviotte.woff') format('woff'),
+        /* Modern Browsers */
+        url('Flaviotte.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('Flaviotte.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
