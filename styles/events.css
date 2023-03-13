@@ -13,28 +13,67 @@ h2 {
 .event {
     width: 20%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.356);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.418);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 0.5%;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .upcoming_events,.past_events {
     width: 100%;
-    height: 40%;
+    height: 50%;
     display: flex;
     justify-content: space-evenly;
 }
-
-.event_img {
+h3{
+    font-size: 2.5em;
+    margin: 0;
+    padding-top: 2%;
+    font-family: 'Kalmansk-Regular';
+}
+.description{
+    font-size: 1.2em;
+    margin: 1% 0;
+    font-style: italic;
+}
+.students_count{
+  display: flex;
+}
+.students_count:nth-child(2){
+    align-items: center;
+}
+.img_container {
     width: 100%;
-    height: 70%;
+    height: 65%;
+}
+.event_img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .event_stat_icon {
-    width: 30px;
+    width: 25px;
     height: auto;
+    left: 84%;
+    top: 93%;
+    margin-right: 4%;
+}
+.event_intro{
+    width: 100%;
+    margin: 0;
+    height: 22%;
 }
 .event_stats{
     display: flex;
+    width: 100%;
+    height: 8%;
+    align-items: center;
     justify-content: space-between;
+    font-size: 1.1em;
+    font-style: bold;
+    color: #FF3F81;
 }
