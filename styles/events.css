@@ -5,13 +5,16 @@ h1,h2{
 }
 h1 {
     font-size: 3em;
+    text-align: center;
 }
 
 h2 {
     font-size: 2em;
+    text-align: center;
 }
 .event {
     width: 20%;
+    min-width: 385px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.418);
     backdrop-filter: blur(8px);
@@ -33,6 +36,7 @@ h3{
     margin: 0;
     padding-top: 2%;
     font-family: 'Kalmansk-Regular';
+    font-weight: 500;
 }
 .description{
     font-size: 1.2em;
