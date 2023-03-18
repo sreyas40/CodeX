@@ -1,6 +1,7 @@
 * ---------team-----------------  */
 .team_body {
     font-family: 'Flaviotte';
+    
 }
 
 .row{
@@ -9,6 +10,8 @@
     margin-right: auto;
     margin: auto;
     text-align: center;
+    
+    
 }
 .column {
     float: left;
@@ -16,7 +19,6 @@
     margin-bottom: 10px;
     padding: 0 2px;
     margin-left: 3%;
-    justify-content: center;
     
     
     
@@ -27,7 +29,7 @@
 @media screen and (max-width: 650px) {
     .column {
         width: 100%;
-        display: block;
+        
         
     }
 }
@@ -35,7 +37,7 @@
 /* Add some shadows to create a card effect */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: black;
     backdrop-filter: blur(8px);
     
     -webkit-backdrop-filter: blur(10px);
@@ -100,7 +102,7 @@ h3 {
 }
 
 .leads {
-    margin-left: 28%;
+    margin-left: auto;
 
 }
 
@@ -110,7 +112,6 @@ h3 {
 }
 
 h1,
-h2,
 h3 {
     text-align: center;
 }
