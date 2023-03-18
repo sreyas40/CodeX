@@ -16,7 +16,7 @@
     margin-bottom: 10px;
     padding: 0 2px;
     margin-left: 3%;
-    text-align: center;
+    justify-content: center;
     
     
     
@@ -100,7 +100,7 @@ h3 {
 }
 
 .leads {
-    margin-left: 18%;
+    margin-left: 28%;
 
 }
 
