@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,300&family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -22,6 +23,7 @@
 
 
 <body>
+    <section class="intro" id="intro">
     <header class="navbar">
         <img src="images/CodeX_logo_white.png" alt="CodeX logo">
 
@@ -37,6 +39,20 @@
                 us</a>
         </div>
     </header>
+
+    <h1><span class="intro_h1_span">CODE</span>X</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet ullam architecto cum magnam quod similique commodi. Provident, dolor delectus vel nemo, autem praesentium numquam illo cum ex ullam dolorem cumque!</p>
+</section>
+<section class="mission">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque nam nesciunt esse hic voluptatum incidunt odio iusto reiciendis? Molestias rerum earum tempora libero nostrum assumenda minus quam repellendus quo!
+    Quibusdam in, quod odio delectus similique hic accusantium voluptatem reiciendis, nostrum fugiat, alias consequuntur quaerat dolorem velit numquam nisi aspernatur quas tempore vitae eius explicabo commodi voluptatibus! Repudiandae, repellendus necessitatibus!</p>
+    <div>
+        <img src="images/mission_illu.svg" alt="our mission">
+    </div>
+</section>
+<section class="info"></section>
+
+
 
     <div class="carousel_body">
         <img class="is-hidden carousel_control carousel_control_left" src="icons/arrow_left.svg" alt="previous slide">
@@ -178,7 +194,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <script>
         VANTA.GLOBE({
-            el: "body",
+            el: "#intro",
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
