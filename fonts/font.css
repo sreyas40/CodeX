@@ -38,11 +38,3 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
-
-
-@font-face {
-    font-family: 'Kalmansk-Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Kalmansk-Regular'), url('Kalmansk-Regular.otf') format('woff');
-}
