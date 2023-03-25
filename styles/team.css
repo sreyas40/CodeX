@@ -101,9 +101,9 @@ h3 {
     height: 150;
 }
 
-.leads {
-    margin-left: auto;
-
+.team_row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nxtsec {
