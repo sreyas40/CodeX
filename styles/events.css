@@ -44,7 +44,6 @@ h3{
 .description{
     font-size: 1.2em;
     margin: 1% 0;
-    font-style: italic;
 }
 .students_count{
   display: flex;

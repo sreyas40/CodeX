@@ -71,8 +71,9 @@ h3 {
     max-height: 50%;
 }
 
-.leads {
-    margin-left: 25%;
+.team_row {
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
