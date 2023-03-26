@@ -1,23 +1,24 @@
-/* ---------team-----------------  */
+* ---------team-----------------  */
 .team_body {
     font-family: 'Flaviotte';
+    
 }
-.team_row{
-    display: flex;
-    height: 40%;
-    width: 100%;
-}
+
+
 
 /* Add some shadows to create a card effect */
 .card {
     height: 100%;
     width: 20%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #edf6f95e;
-    backdrop-filter: blur(10px);
+    background-color: black;
+    backdrop-filter: blur(8px);
+    
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
+    border-radius: 10%;
 }
+
+
 
 h1 {
     font-size: 3em;
@@ -33,6 +34,8 @@ h3 {
     font-size: 1.5em;
 }
 
+
+
 .title {
     color: black;
     text-align: center;
@@ -46,8 +49,7 @@ h3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;  /*should change this*/
-    height: 40%;
+
 }
 
 .team_row {
@@ -56,8 +58,12 @@ h3 {
 
 }
 
+
+
 h1,
-h2,
 h3 {
     text-align: center;
+}
+.title{
+    color: #FF3F81;
 }
