@@ -1,22 +1,52 @@
-/* ---------team-----------------  */
+
 .team_body {
     font-family: 'Flaviotte';
 }
 
+section{
+    height: 50%;
+    width: 100%;
+}
+.team_row {
+    height: 8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+.team_row2 {
+    justify-content: space-evenly;
+}
 
 /* Add some shadows to create a card effect */
 .card {
     height: 100%;
     width: 20%;
+    min-height: 100%;
+    max-height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #edf6f95e;
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.521);
+    backdrop-filter: blur(8px);
+    
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 10%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
 }
 
 
+.img_container{
+    width: 70%;
+    height: 50%;
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
 
 h1 {
     font-size: 3em;
@@ -41,22 +71,15 @@ h3 {
 }
 
 
-.card>img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.team_row {
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 
 
 h1,
-h2,
-h3 {
+h3,h2 {
     text-align: center;
+}
+
+.title {
+    color: #FF3F81;
 }
