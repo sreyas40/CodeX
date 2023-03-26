@@ -1,4 +1,4 @@
-/* ---------team----------------- */ 
+
 .team_body {
     font-family: 'Flaviotte';
 }
@@ -27,6 +27,7 @@ section{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.521);
     backdrop-filter: blur(8px);
+    
     -webkit-backdrop-filter: blur(10px);
     border-radius: 5px;
     display: flex;
@@ -61,8 +62,6 @@ h3 {
     font-size: 1.5em;
 }
 
-
-
 .title {
     color: black;
     text-align: center;
@@ -71,8 +70,13 @@ h3 {
     font-size: 1.3em;
 }
 
+
+
+
+
+
 h1,
-h3 ,h2{
+h3,h2 {
     text-align: center;
 }
 
