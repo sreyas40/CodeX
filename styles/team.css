@@ -18,6 +18,7 @@ section {
 .card {
     height: 30rem;
     width: 22%;
+    min-width: 345px;
     background-color: rgba(0, 0, 0, 0.278);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -32,7 +33,7 @@ section {
 .img_container {
     margin-top: 7%;
     width: auto;
-    height: 15rem;
+    height: 10rem;
 }
 
 .card_img {
@@ -53,7 +54,7 @@ h2 {
 
 h3 {
     font-size: calc(0.9em + 1vw);
-    margin: 5% 0;
+    margin: 10% 0 5% 0;
 }
 
 .title {

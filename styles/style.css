@@ -89,13 +89,14 @@ a {
 /*---------- About us / mission / start--------------*/
 .about,
 .mission,
-.start {
+.start,
+.vision {
     margin: 5% 0 2% 3%;
     border-radius: 8px;
     align-self: flex-start;
     padding: 2%;
     width: 80%;
-    height: 400px;
+    height: 25rem;
     background: linear-gradient(70deg, #23153c 30%, #30204b);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
@@ -110,7 +111,8 @@ a {
 }
 
 .about_flex,
-.mission_flex {
+.mission_flex,
+.vision_flex {
     display: flex;
     width: 100%;
     height: 90%;
@@ -121,15 +123,17 @@ a {
     height: 100%;
     font-size: calc(1em + 0.3vw);
     line-height: 1.5;
+    min-width: 320px;
 }
 
 .about_flex>div {
-    position: absolute;
+    position: relative;
     width: 50%;
     right: 0;
     top: 5%;
-    height: calc(100% + 25%);
+    height: calc(100% + 55%);
     box-sizing: border-box;
+    min-width: 350px;
 }
 
 .about_flex>div>img {
@@ -151,17 +155,21 @@ a {
 .mission>h2 {
     text-align: right;
 }
-.mission_flex>div{
+
+.mission_flex>div {
     position: relative;
     height: calc(100% + 45%);
+    width: 50%;
     bottom: 15%;
     right: 8%;
 }
+
 .mission_flex>div>img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     margin: 2%;
+    /* min-width: 300px; */
 }
 
 .mission_flex>ul {
@@ -173,6 +181,32 @@ a {
     font-size: calc(1em + 0.3vw);
     background: #23153c;
     margin-bottom: 5%;
+}
+
+.vision_flex>p {
+    width: 60%;
+    height: 100%;
+    font-size: calc(1em + 0.3vw);
+    line-height: 1.5;
+    min-width: 320px;
+}
+
+.vision_flex>div {
+    position: relative;
+    width: 50%;
+    right: 0;
+    bottom: 50%;
+    height: calc(100% + 85%);
+    box-sizing: border-box;
+    min-width: 350px;
+}
+
+.vision_flex>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 2%;
+    min-width: 300px;
 }
 
 /*-----------------------------------*/
@@ -350,3 +384,43 @@ svg:hover #svg_color {
 
 /*-----------------------------------*/
 /*----------------Responsiveness-------------------*/
+@media(max-width:1085px) {
+
+    .about,
+    .mission,
+    .vision {
+        height: 50rem;
+        width: 90%;
+    }
+
+    .mission_flex,
+    .about_flex,
+    .vision_flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_flex>div,
+    .mission_flex>div,
+    .vision_flex>div {
+        position: static;
+    }
+
+    .mission_flex>div {
+        align-self: center;
+    }
+
+    .mission_flex>div {
+        width: 50%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #map {
+        width: 100%;
+        height: 400px;
+        margin: 0;
+    }
+}
