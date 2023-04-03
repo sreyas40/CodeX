@@ -74,7 +74,8 @@ a {
     font-size: 5em;
     margin-bottom: 1%;
     padding: 0 0 0 3%;
-
+    font-family: 'NeoLatina-gnx5' !important;
+    font-size: calc(3.5em + 2vw);
 }
 
 .intro>p {
@@ -176,7 +177,10 @@ a {
     font-size: calc(1em + 0.3vw);
     list-style-type: none;
 }
-
+.mission_flex>ul>li::before{
+content: '* ';
+color: #FF3F81;
+}
 .start {
     font-size: calc(1em + 0.3vw);
     background: #23153c;
@@ -224,6 +228,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+    position: relative;
 }
 
 
@@ -233,12 +238,12 @@ a {
     cursor: pointer;
     display: block;
     z-index: 2;
+    position: absolute;
 }
 
 .carousel_box1 {
     height: 100%;
     width: 90%;
-    position: relative;
     background-color: rgba(0, 0, 0, 0.295);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
@@ -298,10 +303,12 @@ a {
 
 .carousel_control_left {
     margin-right: 1%;
+    left: 0;
 }
 
 .carousel_control_right {
     margin-left: 1%;
+    right: 0;
 }
 
 /*-----------------------------------*/

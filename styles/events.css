@@ -1,8 +1,10 @@
-h1,h2{
+h1,
+h2 {
     font-family: 'Flaviotte';
     background-color: #23153c;
     width: 100%;
 }
+
 h1 {
     font-size: calc(2em + 1vw);
     text-align: center;
@@ -29,55 +31,70 @@ h2 {
     font-family: 'Open Sans', sans-serif;
 }
 
-.upcoming_events,.past_events {
+.upcoming_events,
+.past_events {
     width: 100%;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-h3{
+
+h3 {
     font-size: calc(1.2em + 0.5vw);
     margin: 0;
     padding: 2%;
     box-sizing: border-box;
     /* font-weight: 800; */
 }
-.description{
+
+.description {
     font-size: calc(0.6em + 0.5vw);
     margin: 1% 0;
     box-sizing: border-box;
     padding: 0% 2%;
 }
-.students_count{
-  display: flex;
+
+.students_count {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    border: solid 1px white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 2% 3%;
 }
-.students_count:nth-child(2){
-    align-items: center;
+
+.students_count>div {
+    height: 100%;
 }
+
 .img_container {
     width: 100%;
     height: 65%;
 }
-.event_img{
+
+.event_img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
 .event_stat_icon {
-    width: 25px;
+    width: 45px;
     height: auto;
     left: 84%;
     top: 93%;
     margin-right: 4%;
 }
-.event_intro{
+
+.event_intro {
     width: 100%;
     margin: 0;
     height: 22%;
 }
-.event_stats{
+
+.event_stats {
     display: flex;
     width: 100%;
     height: 10%;
@@ -91,9 +108,12 @@ h3{
     margin: 3% 0;
 }
 
-.event_reg{
+.event_reg {
     font-family: inherit;
-    height: 60%;
-    width: 25%;
-    border-radius: 8px;
+    height: 80%;
+    width: 30%;
+    border-radius: 20px;
+    background-color: #F1F184;
+    border: none;
+    outline: none;
 }
