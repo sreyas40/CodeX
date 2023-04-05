@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -163,6 +167,7 @@ a {
     width: 50%;
     bottom: 15%;
     right: 8%;
+    min-width: 350px;
 }
 
 .mission_flex>div>img {
@@ -176,11 +181,14 @@ a {
 .mission_flex>ul {
     font-size: calc(1em + 0.3vw);
     list-style-type: none;
+    width: 50%;
 }
-.mission_flex>ul>li::before{
-content: '* ';
-color: #FF3F81;
+
+.mission_flex>ul>li::before {
+    content: '* ';
+    color: #FF3F81;
 }
+
 .start {
     font-size: calc(1em + 0.3vw);
     background: #23153c;
@@ -395,9 +403,16 @@ svg:hover #svg_color {
 
     .about,
     .mission,
-    .vision {
-        height: 50rem;
+    .vision,.start {
+        height: 45rem;
         width: 90%;
+        margin: 3% auto;
+    }
+.about_flex>p,.start_flex>p,.mission_flex>ul,.vision_flex>p{
+    width: 95%;
+}
+    .start {
+        height: fit-content;
     }
 
     .mission_flex,
@@ -405,6 +420,11 @@ svg:hover #svg_color {
     .vision_flex {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    section>h2 {
+        text-align: center !important;
     }
 
     .about_flex>div,
@@ -415,10 +435,11 @@ svg:hover #svg_color {
 
     .mission_flex>div {
         align-self: center;
+        width: 40%;
     }
 
-    .mission_flex>div {
-        width: 50%;
+    .carousel_body {
+        width: 100%;
     }
 
     footer {
@@ -429,5 +450,9 @@ svg:hover #svg_color {
         width: 100%;
         height: 400px;
         margin: 0;
+    }
+
+    .map_frame {
+        border-radius: 0;
     }
 }
