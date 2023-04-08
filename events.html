@@ -25,17 +25,22 @@
 
     <header class="navbar">
         <img src="images/CodeX_logo_white.png" alt="CodeX logo">
-    
+
         <div class="nav_links">
             <a href="index.html">home</a>
             <a href="team.html">team</a>
             <a href="events.html">events</a>
             <a href="blogs.html">blogs</a>
-    
+
             <a href="index.html#contact">contact</a>
             <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfyTz8JIHoxmqW3IqkV5d4v1IVPrsbULLctQqGBQDKGhy9QYQ/viewform?usp=pp_url">join
                 us</a>
+        </div>
+
+        <div class="mobile_nav_div">
+            <ion-icon class="mobile_nav_icons mobile_nav_open" name="menu-outline"></ion-icon>
+            <ion-icon class="mobile_nav_icons mobile_nav_close hidden_active" name="close-outline"></ion-icon>
         </div>
     </header>
 
@@ -159,6 +164,9 @@
             </div>
         </div>
     </section>
+    <script src="mobileNav.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
