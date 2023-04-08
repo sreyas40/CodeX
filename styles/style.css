@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -50,7 +54,9 @@ a {
     height: 60px;
 }
 
-
+.mobile_nav_div {
+    display: none;
+}
 
 .navbar div a {
     color: white;
@@ -163,6 +169,7 @@ a {
     width: 50%;
     bottom: 15%;
     right: 8%;
+    min-width: 350px;
 }
 
 .mission_flex>div>img {
@@ -176,11 +183,14 @@ a {
 .mission_flex>ul {
     font-size: calc(1em + 0.3vw);
     list-style-type: none;
+    width: 50%;
 }
-.mission_flex>ul>li::before{
-content: '* ';
-color: #FF3F81;
+
+.mission_flex>ul>li::before {
+    content: '* ';
+    color: #FF3F81;
 }
+
 .start {
     font-size: calc(1em + 0.3vw);
     background: #23153c;
@@ -395,9 +405,22 @@ svg:hover #svg_color {
 
     .about,
     .mission,
-    .vision {
-        height: 50rem;
+    .vision,
+    .start {
+        height: 45rem;
         width: 90%;
+        margin: 3% auto;
+    }
+
+    .about_flex>p,
+    .start_flex>p,
+    .mission_flex>ul,
+    .vision_flex>p {
+        width: 95%;
+    }
+
+    .start {
+        height: fit-content;
     }
 
     .mission_flex,
@@ -405,6 +428,11 @@ svg:hover #svg_color {
     .vision_flex {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    section>h2 {
+        text-align: center !important;
     }
 
     .about_flex>div,
@@ -415,10 +443,11 @@ svg:hover #svg_color {
 
     .mission_flex>div {
         align-self: center;
+        width: 40%;
     }
 
-    .mission_flex>div {
-        width: 50%;
+    .carousel_body {
+        width: 100%;
     }
 
     footer {
@@ -429,5 +458,56 @@ svg:hover #svg_color {
         width: 100%;
         height: 400px;
         margin: 0;
+    }
+
+    .map_frame {
+        border-radius: 0;
+    }
+}
+
+@media(max-width:765px) {
+    .navbar {
+        z-index: 2;
+    }
+
+    .nav_links {
+        background-color: rgba(255, 255, 255, 0.456);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        position: absolute;
+        top: 0;
+        height: 40rem;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 300ms linear;
+        font-size: 2rem;
+    }
+
+    .nav_links>a {
+        color: white !important;
+        margin-bottom: 3%;
+    }
+
+    .mobile_nav_div {
+        display: block;
+        margin-right: 3%;
+        border-right: solid 2px white;
+        /* border-radius: 5px; */
+        height: 48px;
+    }
+
+    .mobile_nav_icons {
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        color: #eeebe0;
+    }
+
+    .hidden_active {
+        display: none;
     }
 }

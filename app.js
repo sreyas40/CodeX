@@ -1,9 +1,9 @@
-const slides = document.querySelector(".carousel_slides")
-const slideList = Array.from(slides.children)
-const prevButton = document.querySelector(".carousel_control_left")
-const nextButton = document.querySelector(".carousel_control_right")
-const navSlide = document.querySelector(".carousel_nav")
-const dotsNav = Array.from(navSlide.children)
+const slides = document.querySelector(".carousel_slides");
+const slideList = Array.from(slides.children);
+const prevButton = document.querySelector(".carousel_control_left");
+const nextButton = document.querySelector(".carousel_control_right");
+const navSlide = document.querySelector(".carousel_nav");
+const dotsNav = Array.from(navSlide.children);
 const slideSpace = slides.getBoundingClientRect().width;
 //arranging slides next to each other
 const setSlidePosition = (slide, index) => {
