@@ -49,19 +49,22 @@ h3 {
 }
 
 .description {
-    font-size: calc(0.6em + 0.5vw);
+    font-family: 'Simplifica';
+    font-size: clamp(1.3rem,2vw,1.7rem);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
     margin: 1% 0;
     box-sizing: border-box;
     padding: 0% 2%;
 }
 
 .students_count {
+    position: relative;
     width: 25%;
     height: 80%;
     display: flex;
-    border: solid 1px white;
+    align-items: baseline;
     box-sizing: border-box;
-    border-radius: 20px;
     padding: 2% 3%;
 }
 
@@ -74,20 +77,15 @@ h3 {
     height: 65%;
 }
 
-.event_img {
+.event_img,.event_stat_icon {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-
-.event_stat_icon {
-    width: 45px;
-    height: auto;
-    left: 84%;
-    top: 93%;
-    margin-right: 4%;
+.event_stat_icon{
+    position: relative;
+   bottom: -.25rem;
 }
-
 .event_intro {
     width: 100%;
     margin: 0;
@@ -98,10 +96,9 @@ h3 {
     display: flex;
     width: 100%;
     height: 10%;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     font-size: calc(0.8em + 0.5vw);
-    font-style: bold;
     color: #FF3F81;
     box-sizing: border-box;
     padding: 0 2%;
@@ -110,10 +107,12 @@ h3 {
 
 .event_reg {
     font-family: inherit;
+    font-size: inherit;
     height: 80%;
     width: 30%;
-    border-radius: 20px;
-    background-color: #F1F184;
+    background-color: transparent;
+    color: #FF3F81;
     border: none;
     outline: none;
+    border-bottom: solid 2px white;
 }
