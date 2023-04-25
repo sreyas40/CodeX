@@ -18,8 +18,7 @@ h2 {
 .event {
     width: 20%;
     min-width: 385px;
-    max-height: 535px;
-    height: 50rem;
+    height: 35rem;
     margin-bottom: 5%;
     background-color: rgba(0, 0, 0, 0.418);
     backdrop-filter: blur(8px);
@@ -41,16 +40,18 @@ h2 {
 }
 
 h3 {
-    font-size: calc(1.2em + 0.5vw);
+    font-family: 'Simplifica';
+    letter-spacing: .2rem;
+    font-weight: 800;
+    font-size: clamp(1.8rem,2vw,2.2rem);
     margin: 0;
     padding: 2%;
     box-sizing: border-box;
-    /* font-weight: 800; */
 }
 
 .description {
     font-family: 'Simplifica';
-    font-size: clamp(1.3rem,2vw,1.7rem);
+    font-size: clamp(1.5rem, 2vw, 1.7rem);
     font-weight: 500;
     letter-spacing: 0.1rem;
     margin: 1% 0;
@@ -60,7 +61,7 @@ h3 {
 
 .students_count {
     position: relative;
-    width: 25%;
+    width: 27%;
     height: 80%;
     display: flex;
     align-items: baseline;
@@ -77,15 +78,18 @@ h3 {
     height: 65%;
 }
 
-.event_img,.event_stat_icon {
+.event_img,
+.event_stat_icon {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.event_stat_icon{
+
+.event_stat_icon {
     position: relative;
-   bottom: -.25rem;
+    bottom: -.25rem;
 }
+
 .event_intro {
     width: 100%;
     margin: 0;
@@ -98,7 +102,7 @@ h3 {
     height: 10%;
     align-items: baseline;
     justify-content: space-between;
-    font-size: calc(0.8em + 0.5vw);
+    font-size: 1.4rem;
     color: #FF3F81;
     box-sizing: border-box;
     padding: 0 2%;

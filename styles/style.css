@@ -83,7 +83,6 @@ a {
 .intro>h1 {
     margin-bottom: 1%;
     padding: 0 0 0 3%;
-   letter-spacing: clamp(1rem,2vw,3rem);
     font-size: calc(5.5em + 2vw);  
 }
 
@@ -516,4 +515,7 @@ svg:hover #svg_color {
     .hidden_active {
         display: none;
     }
+        .intro>p{
+            width: 70%;
+        }
 }
