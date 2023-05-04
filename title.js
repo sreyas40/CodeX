@@ -1,8 +1,10 @@
 const title = document.querySelector(".club_title");
-
-setTimeout(() => { title.textContent = "6003#" }, 1000);
-setTimeout(() => { title.textContent = "C003#" }, 2000);
-setTimeout(() => { title.textContent ="CO03#" }, 3000);
-setTimeout(() => { title.textContent = "COD3#" }, 4000);
-setTimeout(() => { title.textContent = "CODE#" }, 5000);
-setTimeout(() => { title.textContent = "CODEX" }, 6000);
+setTimeout(() => { title.textContent = "6####" }, 200);
+setTimeout(() => { title.textContent = "60###" }, 400);
+setTimeout(() => { title.textContent = "600##" }, 600);
+setTimeout(() => { title.textContent = "6003#" }, 800);
+setTimeout(() => { title.textContent = "C003#" }, 1000);
+setTimeout(() => { title.textContent = "CO03#" }, 1200);
+setTimeout(() => { title.textContent = "COD3#" }, 1300);
+setTimeout(() => { title.textContent = "CODE#" }, 1400);
+setTimeout(() => { title.textContent = "CODEX" }, 1600);
