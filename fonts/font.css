@@ -8,6 +8,13 @@
 }
 
 @font-face {
+    font-family: 'CodeNext-Trial-Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('CodeNext-Trial-Thin'), url('CodeNext-Trial-Thin.woff') format('woff');
+}
+
+@font-face {
     font-family: 'Code Next-Trial Regular';
     font-style: normal;
     font-weight: normal;
@@ -19,12 +26,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Code Next-Trial SemiBold'), url('CodeNext-Trial-SemiBold.woff') format('woff');
-}
-@font-face {
-    font-family: 'NeoLatina-gnx5';
-    font-style: normal;
-    font-weight: normal;
-    src: local('NeoLatina-gnx5'), url('NeoLatina-gnx5.ttf') format('truetype');
 }
 
 /* Webfont: Flaviotte-Regular */

@@ -16,9 +16,10 @@ section {
 }
 
 .card {
+    position: relative;
     height: 30rem;
     width: 22%;
-    min-width: 345px;
+    min-width: 400px;
     background-color: rgba(0, 0, 0, 0.278);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -29,6 +30,32 @@ section {
     margin: 0 3% 2% 0;
 }
 
+.card::after {
+    content: '';
+    background-color: transparent;
+    width: 8%;
+    height: .18rem;
+    font-size: 5rem;
+    position: absolute;
+    bottom: -.18rem;
+    right: .55rem;
+    visibility: hidden;
+}
+
+.card:hover::after {
+    visibility: visible;
+    animation: blinker 1s 200ms infinite;
+}
+
+@keyframes blinker {
+    0% {
+        background-color: #FF3F81;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
 
 .img_container {
     margin-top: 7%;
@@ -53,17 +80,21 @@ h2 {
 }
 
 h3 {
-    font-size: calc(0.9em + 1vw);
-    margin: 10% 0 5% 0;
+    font-family: 'Simplifica';
+    letter-spacing: .07rem;
+    font-weight: bolder;
+    font-size: clamp(1.8rem,2vw,2.2rem);
+    margin: 10% 0 1% 0;
 }
 
 .title {
-    color: black;
     text-align: center;
     font-family: 'Simplifica';
     font-weight: 600;
-    font-size: calc(.8em + 1vw);
+    font-size: clamp(1.3rem, 2vw, 1.4rem);
     margin: 0 0;
+    letter-spacing: .07rem;
+    margin-bottom: 2%;
 }
 
 h1,
@@ -72,6 +103,29 @@ h2 {
     text-align: center;
 }
 
-.title {
-    color: #FF3F81;
+.bio {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: clamp(1.4rem, 2vw, 1.5rem);
+    font-family: 'Simplifica';
+    font-weight: 500;
+}
+
+.bio_icons {
+    width: 2.9rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.bio_decription {
+    width: fit-content;
+    height: fit-content;
+    border-left: solid 2px #FF3F81;
+    padding-left: 5%;
+    color: white;
+    letter-spacing: .15rem;
 }

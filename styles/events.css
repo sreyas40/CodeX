@@ -18,8 +18,7 @@ h2 {
 .event {
     width: 20%;
     min-width: 385px;
-    max-height: 535px;
-    height: 50rem;
+    height: 35rem;
     margin-bottom: 5%;
     background-color: rgba(0, 0, 0, 0.418);
     backdrop-filter: blur(8px);
@@ -41,27 +40,36 @@ h2 {
 }
 
 h3 {
-    font-size: calc(1.2em + 0.5vw);
+    /* font-family: 'CodeNext-Trial-Thin'; */
+        font-weight: normal;
+    /* font-family: 'Simplifica'; */
+    letter-spacing: .1rem;
+    /* font-weight: 800; */
+    font-size: clamp(1.8rem, 2vw, 1.8rem);
     margin: 0;
     padding: 2%;
     box-sizing: border-box;
-    /* font-weight: 800; */
 }
 
 .description {
-    font-size: calc(0.6em + 0.5vw);
+    /* font-family: 'Simplifica'; */
+    font-family: 'CodeNext-Trial-Thin';
+    font-weight: 100;
+    /* font-size: clamp(1.5rem, 2vw, 1.7rem); */
+    /* font-weight: 500; */
+    letter-spacing: 0.1rem;
     margin: 1% 0;
     box-sizing: border-box;
     padding: 0% 2%;
 }
 
 .students_count {
-    width: 25%;
+    position: relative;
+    width: 27%;
     height: 80%;
     display: flex;
-    border: solid 1px white;
+    align-items: baseline;
     box-sizing: border-box;
-    border-radius: 20px;
     padding: 2% 3%;
 }
 
@@ -74,18 +82,17 @@ h3 {
     height: 65%;
 }
 
-.event_img {
+.event_img,
+.event_stat_icon {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
 .event_stat_icon {
-    width: 45px;
-    height: auto;
-    left: 84%;
-    top: 93%;
-    margin-right: 4%;
+    position: relative;
+    bottom: -.25rem;
+    height: 85%;
 }
 
 .event_intro {
@@ -98,22 +105,57 @@ h3 {
     display: flex;
     width: 100%;
     height: 10%;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
-    font-size: calc(0.8em + 0.5vw);
-    font-style: bold;
+    font-size: 1.4rem;
     color: #FF3F81;
     box-sizing: border-box;
     padding: 0 2%;
     margin: 3% 0;
 }
 
+a {
+    width: 30%;
+}
+
 .event_reg {
     font-family: inherit;
+    font-size: inherit;
     height: 80%;
-    width: 30%;
-    border-radius: 20px;
-    background-color: #F1F184;
+    width: 100%;
+    background-color: transparent;
+    color: #FF3F81;
     border: none;
     outline: none;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 5%;
+}
+
+.event_reg::after {
+    content: '';
+    background-color: #90EE90;
+    left: -100%;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: left 500ms;
+    z-index: 1;
+}
+
+.event_reg::before {
+    content: '';
+    background-color: white;
+    left: 0%;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+}
+
+.event_reg:hover::after {
+    left: 0;
 }
