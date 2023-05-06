@@ -43,7 +43,7 @@ h3 {
     /* font-family: 'CodeNext-Trial-Thin'; */
         font-weight: normal;
     /* font-family: 'Simplifica'; */
-    letter-spacing: .1rem;
+    letter-spacing: .05rem;
     /* font-weight: 800; */
     font-size: clamp(1.8rem, 2vw, 1.8rem);
     margin: 0;

@@ -2,11 +2,24 @@
     display: none;
 }
 
-html,body {
-    overflow-x: hidden;
+html,
+body {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #23153c;
+    color: #FF3F81;
+    min-height: 100vh;
 }
 
 body {
@@ -16,16 +29,11 @@ body {
     height: 100%;
     min-height: 100vh;
     font-family: 'Quicksand', sans-serif;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #23153c;
-    color: #FF3F81;
 }
 
 a {
     text-decoration: none;
+    text-align: center;
     color: inherit;
 }
 
@@ -83,7 +91,7 @@ a {
 }
 
 .intro>h1 {
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     margin-bottom: 1%;
     padding: 0 0 0 3%;
@@ -191,9 +199,11 @@ font-family: 'Open Sans', sans-serif;
     list-style-type: none;
     width: 50%;
 }
-.mission_flex>ul>li{
+
+.mission_flex>ul>li {
     margin-bottom: 1%;
 }
+
 .mission_flex>ul>li::before {
     content: '* ';
     color: #FF3F81;
@@ -416,9 +426,10 @@ svg:hover #svg_color {
     .mission,
     .vision,
     .start {
-        height: 45rem;
+        height: fit-content;
         width: 90%;
-        margin: 3% auto;
+        margin: 30rem auto 3% auto;
+        line-height: 1.5rem;
     }
 
     .about_flex>p,
@@ -431,6 +442,7 @@ svg:hover #svg_color {
 
     .start {
         height: fit-content;
+        margin: 3% auto;
     }
 
     .mission_flex,
@@ -448,12 +460,19 @@ svg:hover #svg_color {
     .about_flex>div,
     .mission_flex>div,
     .vision_flex>div {
-        position: static;
+        position: absolute;
+        inset: 0;
+        top: -50rem;
+        margin: auto;
     }
 
     .mission_flex>div {
         align-self: center;
         width: 40%;
+    }
+
+    .vision_flex>div,.about_flex>div {
+        width: 100%;
     }
 
     .carousel_body {
@@ -505,7 +524,7 @@ svg:hover #svg_color {
     .mobile_nav_div {
         display: block;
         margin-right: 3%;
-        border-right: solid 2px white;
+        /* border-right: solid 2px white; */
         /* border-radius: 5px; */
         height: 48px;
     }
@@ -520,7 +539,8 @@ svg:hover #svg_color {
     .hidden_active {
         display: none;
     }
-        .intro>p{
-            width: 70%;
-        }
+
+    .intro>p {
+        width: 70%;
+    }
 }
