@@ -4,6 +4,8 @@
 
 html,
 body {
+    overflow-x: hidden;
+    position: relative;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
