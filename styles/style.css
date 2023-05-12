@@ -175,7 +175,7 @@ a {
 }
 
 .mission>h2 {
-    text-align: right;
+    padding-right: 51%;
 }
 
 .mission_flex>div {
@@ -213,6 +213,7 @@ a {
     font-size: calc(1em + 0.3vw);
     background: #23153c;
     margin-bottom: 5%;
+    line-height: 1.5;
 }
 
 .vision_flex>p {
@@ -458,6 +459,10 @@ svg:hover #svg_color {
         text-align: center !important;
     }
 
+    .mission>h2 {
+        padding-right: 0;
+    }
+
     .about_flex>div,
     .mission_flex>div,
     .vision_flex>div {
@@ -549,8 +554,32 @@ svg:hover #svg_color {
         display: none;
     }
 
+    .vanta-canvas {
+        top: 15rem !important;
+    }
+
     .intro>p {
         width: 70%;
+    }
+
+    .carousel_body {
+        height: 43.75rem;
+    }
+
+    .carousel_control {
+        bottom: -5.5rem;
+    }
+
+    .carousel_control_right {
+        right: 30%;
+    }
+
+    .carousel_control_left {
+        left: 30%;
+    }
+
+    .carousel_nav {
+        margin-bottom: 10rem;
     }
 
     .contact_details {
