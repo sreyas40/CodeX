@@ -115,7 +115,7 @@ h3 {
 }
 
 a {
-    width: 30%;
+    width: 40%;
 }
 
 .event_reg {
@@ -131,7 +131,7 @@ a {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    padding: 5%;
+    padding: 8%;
 }
 
 .event_reg::after {
@@ -158,4 +158,12 @@ a {
 
 .event_reg:hover::after {
     left: 0;
+}
+
+@media(max-width:400px) {
+
+    .event {
+        min-width: 90%;
+    }
+
 }

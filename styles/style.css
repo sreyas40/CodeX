@@ -81,7 +81,7 @@ a {
 }
 
 .navbar div a:hover {
-    color: #e6395ba0;
+    color: #ea70add7;
 }
 
 /*-----------------------------------*/
@@ -146,7 +146,6 @@ a {
     height: 100%;
     font-size: calc(1em + 0.3vw);
     line-height: 1.5;
-    min-width: 320px;
 }
 
 .about_flex>div {
@@ -182,7 +181,7 @@ a {
 .mission_flex>div {
     position: relative;
     height: calc(100% + 45%);
-    width: 50%;
+    width: 40%;
     bottom: 15%;
     right: 8%;
     min-width: 350px;
@@ -193,7 +192,6 @@ a {
     height: 100%;
     object-fit: contain;
     margin: 2%;
-    /* min-width: 300px; */
 }
 
 .mission_flex>ul {
@@ -222,7 +220,7 @@ a {
     height: 100%;
     font-size: calc(1em + 0.3vw);
     line-height: 1.5;
-    min-width: 320px;
+
 }
 
 .vision_flex>div {
@@ -345,7 +343,7 @@ a {
 /*---------------FOOTER--------------------*/
 footer {
     width: 100%;
-    height: 40%;
+    height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -364,6 +362,7 @@ footer {
 }
 
 .footer_contact {
+    height: fit-content;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -473,8 +472,15 @@ svg:hover #svg_color {
         width: 40%;
     }
 
-    .vision_flex>div,.about_flex>div {
+    .vision_flex>div,
+    .about_flex>div {
         width: 100%;
+    }
+
+    .mission_flex>div>img,
+    .about_flex>div>img,
+    .vision_flex>div>img {
+        margin: 0;
     }
 
     .carousel_body {
@@ -516,6 +522,7 @@ svg:hover #svg_color {
         transform: translateX(100%);
         transition: transform 300ms linear;
         font-size: 2rem;
+        min-width: 100%;
     }
 
     .nav_links>a {
@@ -545,4 +552,18 @@ svg:hover #svg_color {
     .intro>p {
         width: 70%;
     }
+
+    .contact_details {
+        width: 90%;
+    }
+}
+
+@media(max-width:400px) {
+
+    .mission_flex>div,
+    .about_flex>div,
+    .vision_flex>div {
+        min-width: 90%;
+    }
+
 }
