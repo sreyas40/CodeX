@@ -101,11 +101,82 @@ a {
 }
 
 .intro>p {
-    width: 30%;
-    padding: 0 0 0 3%;
+    width: fit-content;
+    margin-left: 3%;
     font-size: calc(1em + 0.8vw);
     color: white;
+    line-height: 1.5;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #23153c;
 }
+
+@keyframes blink {
+    0% {
+        border-left-color: #FF3F81;
+    }
+
+    100% {
+        border-left-color: transparent;
+    }
+}
+
+.intro>p::after {
+    content: '';
+    width: 100%;
+    height: clamp(1.58rem, 5vw, 3rem);
+    background-color: #23153c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: typing-ani 6s steps(30) 5.7s forwards,
+        blink 600ms infinite;
+}
+
+@keyframes typing-ani {
+    0% {
+        border-left: solid 4px #FF3F81;
+    }
+
+    40% {
+        left: calc(100% + 8px);
+    }
+
+    100% {
+        left: calc(100% + 8px);
+    }
+
+}
+
+.intro>p::before {
+    content: '';
+    width: 100%;
+    height: clamp(1.7rem,3.4vw,3rem);
+    background-color: #23153c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: typing-ani-2 3.8s steps(18) 9.2s forwards,
+        blink 800ms infinite;
+}
+
+@keyframes typing-ani-2 {
+    0% {
+        border-left: solid 4px #FF3F81;
+    }
+
+    40% {
+        left: calc(70% + 8px);
+    }
+
+    100% {
+        left: calc(70% + 8px);
+        border-left: solid 4px #FF3F81;
+       
+    }
+
+}
+
 
 /*-----------------------------------*/
 
@@ -175,6 +246,7 @@ a {
 }
 
 .mission>h2 {
+    text-align: right;
     padding-right: 51%;
 }
 
@@ -538,8 +610,6 @@ svg:hover #svg_color {
     .mobile_nav_div {
         display: block;
         margin-right: 3%;
-        /* border-right: solid 2px white; */
-        /* border-radius: 5px; */
         height: 48px;
     }
 
@@ -556,10 +626,6 @@ svg:hover #svg_color {
 
     .vanta-canvas {
         top: 15rem !important;
-    }
-
-    .intro>p {
-        width: 70%;
     }
 
     .carousel_body {
@@ -583,7 +649,7 @@ svg:hover #svg_color {
     }
 
     .contact_details {
-        width: 90%;
+        width: fit-content;
     }
 }
 
