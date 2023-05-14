@@ -44,6 +44,8 @@ prevButton.addEventListener('click', e => {
   moveToSlide(slides, currentSlide, prevSlide);
   updateNav(currentDot, prevDot);
   showHideControls(slideList, prevIndex, prevButton, nextButton);
+  autoInterval(false);
+  setTimeout(() => { autoInterval(true) }, 3000);
 })
 //when i click right move slide to the right
 nextButton.addEventListener('click', e => {
@@ -55,6 +57,8 @@ nextButton.addEventListener('click', e => {
   moveToSlide(slides, currentSlide, nextSlide);
   updateNav(currentDot, nextDot);
   showHideControls(slideList, nextIndex, prevButton, nextButton);
+  autoInterval(false);
+  setTimeout(() => { autoInterval(true) },3000);
 })
 //when i click the slide indicator, move to that slide
 navSlide.addEventListener('click', e => {
@@ -67,4 +71,35 @@ navSlide.addEventListener('click', e => {
   moveToSlide(slides, currentSlide, targetSlide);
   updateNav(currentDot, targetDot);
   showHideControls(slideList, targetIndex, prevButton, nextButton);
+  autoInterval(false);
+  setTimeout(() => { autoInterval(true) }, 3000);
 })
+
+function autoSlide() {
+  const currentSlide = slides.querySelector(".current_slide");
+  const nextSlide = currentSlide.nextElementSibling;
+  const currentDot = navSlide.querySelector('.current_pointer');
+  const nextDot = currentDot.nextElementSibling;
+  const nextIndex = slideList.findIndex(slide => slide === nextSlide);
+  const prevSlide = currentSlide.previousElementSibling;
+  const prevDot = currentDot.previousElementSibling;
+  const prevIndex = slideList.findIndex(slide => slide === prevSlide);
+  if (nextSlide === null) {
+    moveToSlide(slides, currentSlide, prevSlide);
+    updateNav(currentDot, prevDot);
+    showHideControls(slideList, prevIndex, prevButton, nextButton);
+  }
+  moveToSlide(slides, currentSlide, nextSlide);
+  updateNav(currentDot, nextDot);
+  showHideControls(slideList, nextIndex, prevButton, nextButton);
+}
+
+const autoInterval = (flag=true) => {
+
+  if (flag) {
+   myInterval = setInterval(autoSlide, 3000);
+  }
+  else {
+      clearInterval(myInterval);
+    }
+  }
