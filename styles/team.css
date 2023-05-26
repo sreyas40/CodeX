@@ -27,7 +27,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 3% 2% 0;
+    margin: 0 1.5% 2% 1.5%;
 }
 
 .card::after {

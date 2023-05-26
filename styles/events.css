@@ -68,6 +68,7 @@ h3 {
     width: 27%;
     height: 80%;
     display: flex;
+    justify-content: center;
     align-items: baseline;
     box-sizing: border-box;
     padding: 2% 3%;
