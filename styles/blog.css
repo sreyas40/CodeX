@@ -8,5 +8,10 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     margin-top: 10%;
-    font-family: 'Simplifica';
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.temp_container h1 {
+    font-weight: 300;
 }

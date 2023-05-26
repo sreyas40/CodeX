@@ -62,7 +62,7 @@ a {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 30px;
-    font-family: 'Code Next-Trial Regular';
+    font-family: 'Quicksand', sans-serif;
     min-width: 450px;
 }
 
@@ -176,7 +176,7 @@ a {
 .mission_flex>div {
     position: relative;
     height: calc(100% + 45%);
-    width: 40%;
+    width: 30%;
     bottom: 15%;
     right: 8%;
     min-width: 350px;
@@ -284,7 +284,7 @@ a {
 
 .carousel_test {
     width: 100%;
-    height: 98%;
+    height: 100%;
     display: flex;
     position: absolute;
     flex-direction: row;

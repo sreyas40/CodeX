@@ -27,7 +27,7 @@ h2 {
     box-sizing: border-box;
     border-radius: 8px;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .upcoming_events,
@@ -40,9 +40,7 @@ h2 {
 }
 
 h3 {
-    /* font-family: 'CodeNext-Trial-Thin'; */
-        font-weight: normal;
-    /* font-family: 'Simplifica'; */
+    font-weight: normal;
     letter-spacing: .05rem;
     /* font-weight: 800; */
     font-size: clamp(1.5rem, 2vw, 1.5rem);
@@ -51,12 +49,8 @@ h3 {
     box-sizing: border-box;
 }
 
-.description {
-    /* font-family: 'Simplifica'; */
-    font-family: 'CodeNext-Trial-Thin';
-    font-weight: 100;
-    /* font-size: clamp(1.5rem, 2vw, 1.7rem); */
-    /* font-weight: 500; */
+.description {  
+    font-weight: 300;
     letter-spacing: 0.1rem;
     margin: 1% 0;
     box-sizing: border-box;

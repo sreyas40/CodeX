@@ -2,6 +2,11 @@
     font-family: 'Flaviotte';
 }
 
+h1 {
+    font-family: 'Grape Nuts', cursive;
+    color: white;
+}
+
 section {
     height: 40%;
     width: 100%;
@@ -80,17 +85,16 @@ h2 {
 }
 
 h3 {
-    font-family: 'Simplifica';
-    letter-spacing: .07rem;
-    font-weight: bolder;
-    font-size: clamp(1.8rem,2vw,2.2rem);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
     margin: 10% 0 1% 0;
 }
 
 .title {
     text-align: center;
-    font-family: 'Simplifica';
-    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     font-size: clamp(1.3rem, 2vw, 1.4rem);
     margin: 0 0;
     letter-spacing: .07rem;
@@ -110,9 +114,9 @@ h2 {
     align-items: center;
     justify-content: center;
     margin-top: 3%;
-    font-size: clamp(1.4rem, 2vw, 1.5rem);
-    font-family: 'Simplifica';
-    font-weight: 500;
+    font-size: clamp(1rem, 2vw, 1rem);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
 }
 
 .bio_icons {
