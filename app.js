@@ -97,7 +97,7 @@ function autoSlide() {
 const autoInterval = (flag=true) => {
 
   if (flag) {
-   myInterval = setInterval(autoSlide, 3000);
+   myInterval = setInterval(autoSlide, 4000);
   }
   else {
       clearInterval(myInterval);
