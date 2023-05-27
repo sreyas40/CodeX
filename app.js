@@ -45,7 +45,7 @@ prevButton.addEventListener('click', e => {
   updateNav(currentDot, prevDot);
   showHideControls(slideList, prevIndex, prevButton, nextButton);
   autoInterval(false);
-  setTimeout(() => { autoInterval(true) }, 3000);
+  autoInterval(true);
 })
 //when i click right move slide to the right
 nextButton.addEventListener('click', e => {
@@ -58,7 +58,7 @@ nextButton.addEventListener('click', e => {
   updateNav(currentDot, nextDot);
   showHideControls(slideList, nextIndex, prevButton, nextButton);
   autoInterval(false);
-  setTimeout(() => { autoInterval(true) },3000);
+  autoInterval(true);
 })
 //when i click the slide indicator, move to that slide
 navSlide.addEventListener('click', e => {
@@ -72,7 +72,7 @@ navSlide.addEventListener('click', e => {
   updateNav(currentDot, targetDot);
   showHideControls(slideList, targetIndex, prevButton, nextButton);
   autoInterval(false);
-  setTimeout(() => { autoInterval(true) }, 3000);
+  autoInterval(true);
 })
 
 function autoSlide() {
@@ -94,12 +94,12 @@ function autoSlide() {
   showHideControls(slideList, nextIndex, prevButton, nextButton);
 }
 
-const autoInterval = (flag=true) => {
+const autoInterval = (flag = true) => {
 
   if (flag) {
-   myInterval = setInterval(autoSlide, 4000);
+    myInterval = setInterval(autoSlide, 4000);
   }
   else {
-      clearInterval(myInterval);
-    }
+    clearInterval(myInterval);
   }
+}

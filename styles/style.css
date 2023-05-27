@@ -548,7 +548,8 @@ svg:hover #svg_color {
     }
 
     .vanta-canvas {
-        top: 15rem !important;
+       width: 100% !important;
+       object-fit: cover;
     }
 
     .carousel_body {
