@@ -75,7 +75,7 @@ section {
 }
 
 h1 {
-    font-size: calc(3em + 1vw);
+    font-size: calc(2.5em + 1vw);
     background-color: #23153c;
 }
 
@@ -97,7 +97,6 @@ h3 {
     font-weight: 400;
     font-size: clamp(1.3rem, 2vw, 1.4rem);
     margin: 0 0;
-    letter-spacing: .07rem;
     margin-bottom: 2%;
 }
 

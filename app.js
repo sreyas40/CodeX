@@ -1,3 +1,5 @@
+//carousel code
+
 const slides = document.querySelector(".carousel_slides");
 const slideList = Array.from(slides.children);
 const prevButton = document.querySelector(".carousel_control_left");
@@ -103,3 +105,14 @@ const autoInterval = (flag = true) => {
     clearInterval(myInterval);
   }
 }
+
+
+
+
+//copy-address code
+const address = document.querySelector('.footer_address');
+address.addEventListener('click', () => {
+  const value = "Adi Shankara Institute of Engineering and Technology, Vidya Bharathi Nagar, Mattoor, Kalady, Kerala-683574";
+  navigator.clipboard.writeText(value);
+})
+
